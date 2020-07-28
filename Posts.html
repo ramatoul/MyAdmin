@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+      <link rel="stylesheet" href="style.css">
+      <title>myAdmin</title>
+
+    </head>
+
+    <body>
+       <!--barre de navigation-->
+    <div class="navbar-fixed">
+      
+      <nav class="blue">
+        
+          <div class="nav-wrapper">
+            <div class="container">
+            <a href="index.html" class="brand-logo">MyAdmin</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Dashboard</a></li>
+              <li><a href="Posts.html">Posts</a></li>
+              <li><a href="Categories.html">Categories</a></li>
+              <li><a href="Comments.html">Comments</a></li>
+              <li><a href="user.html">Users</a></li>
+              <li><span data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></span></li>
+            </ul>
+          </div>
+        </nav>
+      
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="index.html">Dashboard</a></li>
+              <li><a href="Posts.html">Posts</a></li>
+              <li><a href="Categories.html">Categories</a></li>
+              <li><a href="Comments.html">Comments</a></li>
+              <li><a href="user.html">Users</a></li>
+        </ul>
+    </div>
+  <!--fin barre de navigation-->
+      
+          <!--Side nav 2-->
+          <ul id="slide-out" class="sidenav">
+            <li><div class="user-view">
+              <div class="background">
+                <img src="img/photos3.jpg">
+              </div>
+              <a href="#user"><img class="circle" src="img/photos3.jpg"></a>
+              <a href="#name"><span class="white-text name">Sakina Moumouni</span></a>
+              <a href="#email"><span class="white-text email">sakina@gmail.com</span></a>
+            </div></li>
+            <li><a href="index.html"><i class="material-icons">dashboard</i>Dashboard</a></li>
+            <li><a href="Posts.html">Posts</a></li>
+            <li><a href="Categories.html">Categories</a></li>
+            <li><a href="Comments.html">Comments</a></li>
+            <li><a href="user.html">Users</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Account Controls</a></li>
+            <li><a class="waves-effect" href="#!">Logout</a></li>
+          </ul>
+          <!--Side nav 2-->
+        </div>
+            <section style="padding: 15px;">
+                <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                      <div class="card"  style="padding: 20px;">
+                        <h6>Posts</h6>
+                        <table class="striped">
+                          <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Category</th>
+                                <th>Date Created</th>
+                                <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Post One</td>
+                              <td>Web Development</td>
+                              <td>Oct 1,2019</td>
+                              <td><a class="waves-effect waves-light btn blue">Details</a></td>
+                            </tr>
+                            <tr>
+                              <td>Post Two</td>
+                              <td>Graphic Design</td>
+                              <td>Oct 2,2019</td>
+                              <td><a class="waves-effect waves-light btn blue">Details</a></td>
+                            </tr>
+                            <tr>
+                              <td>Post Three</td>
+                              <td>Web Development</td>
+                              <td>Oct 3,2019</td>
+                              <td><a class="waves-effect waves-light btn blue">Details</a></td>
+                            </tr>
+                            <tr>
+                                <td>Post Four</td>
+                                <td>Tech Gadgets</td>
+                                <td>Oct 4,2019</td>
+                                <td><a class="waves-effect waves-light btn blue">Details</a></td>
+                              </tr>
+                              <tr>
+                                <td>Post Five</td>
+                                <td>Graphic Design</td>
+                                <td>Oct 5,2019</td>
+                                <td><a class="waves-effect waves-light btn blue">Details</a></td>
+                              </tr>
+                              <tr>
+                                <td>Post Six</td>
+                                <td>Web Development</td>
+                                <td>Oct 6,2019</td>
+                                <td><a class="waves-effect waves-light btn blue">Details</a></td>
+                              </tr>
+                          </tbody>
+                        </table>
+                        <ul class="pagination">
+                            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                            <li class="active blue"><a href="#!">1</a></li>
+                            <li class="waves-effect"><a href="#!">2</a></li>
+                            <li class="waves-effect"><a href="#!">3</a></li>
+                            <li class="waves-effect"><a href="#!">4</a></li>
+                            <li class="waves-effect"><a href="#!">5</a></li>
+                            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                          </ul>
+                      </div>       
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="blue center-align white-text" style="padding: 10px;">
+              <p>MyAdmin CodeLoccol &copy copyright 2019</p>
+              <div class="fixed-action-btn">
+               <a class="btn-floating btn-large red">
+                 <i class="large material-icons">add</i>
+               </a>
+               <ul>
+                 <li><a class="btn-floating blue modal-trigger" href="#modal1"><i class="material-icons">mode_edit</i></a>
+   
+                   <!-- Modal Structure -->
+                   <div id="modal1" class="modal">
+                     <div class="modal-content">
+                       <h4 class="black-text">Add Post</h4>
+                       <div class="input-field col s12">
+                         <input id="title" type="password" class="validate">
+                         <label for="password">Title</label>
+                       </div>
+                       <div class="input-field col s12">
+                         <select>
+                           <option value="" disabled selected>Select option</option>
+                           <option value="1">Option 1</option>
+                           <option value="2">Option 2</option>
+                           <option value="3">Option 3</option>
+                         </select>
+                         <label>Categorie</label>
+                       </div>
+                       <textarea name="editor1"></textarea>
+                   <script>
+                           CKEDITOR.replace( 'editor1' );
+                   </script>
+                     </div>
+                     <div class="modal-footer">
+                       <a href="#!" class="modal-close waves-effect waves-green btn blue">Submit</a>
+                     </div>
+                   </div></li>
+                   <li><a class="btn-floating blue modal-trigger" href="#modal2"><i class="material-icons">folder</i></a>
+                   <div id="modal2" class="modal">
+                     <div class="modal-content">
+                       <h4 class="black-text">Add Category</h4>
+                       <div class="input-field col s12">
+                         <input id="title" type="password" class="validate">
+                         <label for="password">Title</label>
+                       </div>
+                     </div>
+                     <div class="modal-footer">
+                       <a href="#!" class="modal-close waves-effect waves-green btn blue">Submit</a>
+                     </div>
+                   </div></li>
+                 <li><a class="btn-floating blue modal-trigger" href="#modal3"><i class="material-icons">group</i></a></li>
+                 <div id="modal3" class="modal">
+                   <div class="modal-content">
+                     <h4 class="black-text">Add User</h4>
+                     <div class="input-field col s12">
+                       <input id="Name" type="text" class="validate">
+                       <label for="Name">Name</label>
+                     </div>
+                     <div class="input-field col s12">
+                       <input id="email" type="email" class="validate">
+                       <label for="email">Email</label>
+                     </div>
+                     <div class="input-field col s12">
+                       <input id="password" type="password" class="validate">
+                       <label for="password">Password</label>
+                     </div>
+                    
+                     <div class="input-field col s12">
+                       <input id="confirm password" type="password" class="validate">
+                       <label for="confirm password">Confirm Password</label>
+                     </div>
+                   </div>
+                   <div class="modal-footer">
+                     <a href="#!" class="modal-close waves-effect waves-green btn blue">Submit</a>
+                   </div>
+                 </div>
+               </ul>
+             </div> 
+             </footer>
+             <script src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      <script src="script.js"></script>
+    </body>
+  </html>
